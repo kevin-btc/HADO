@@ -1,9 +1,31 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import emailjs from "emailjs-com";
+
 import Logo from "../images/logo.png";
 
 function Footer() {
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_EMAIL_SERVICE,
+        import.meta.env.VITE_EMAIL_TEMPLATE,
+        e.target,
+        import.meta.env.VITE_EMAIL_USER
+      )
+      .then(
+        () => {
+          alert("Message sent !");
+          clearForm();
+        },
+        () => {
+          alert("Message not sent !");
+        }
+      );
+  };
   return (
     <footer>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -165,7 +187,7 @@ function Footer() {
             <p className="text-sm text-gray-600 mb-4">
               Laissez nous votre email ou numéro de téléphone
             </p>
-            <form>
+            <form onSubmit={sendEmail}>
               <div className="flex flex-wrap mb-4">
                 <div className="w-full">
                   <label className="block text-sm sr-only" htmlFor="newsletter">
@@ -178,6 +200,7 @@ function Footer() {
                       className="form-input w-full text-gray-800 px-3 py-2 pr-12 text-sm"
                       placeholder="Your email"
                       required
+                      name="email"
                     />
                     <button
                       type="submit"

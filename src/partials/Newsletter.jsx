@@ -1,6 +1,44 @@
-import React from "react";
+import React, { useState } from "react";
+
+import emailjs from "emailjs-com";
 
 function Newsletter() {
+  console.log(
+    import.meta.env,
+    import.meta.env.VITE_EMAIL_TEMPLATE,
+    import.meta.env.VITE_EMAIL_USER
+  );
+  const [loading, setLoading] = useState(false);
+
+  const clearForm = () => {
+    document.getElementById("contact-form").reset();
+  };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    setLoading(true);
+
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_EMAIL_SERVICE,
+        import.meta.env.VITE_EMAIL_TEMPLATE,
+        e.target,
+        import.meta.env.VITE_EMAIL_USER
+      )
+      .then(
+        () => {
+          alert("Message sent !");
+          clearForm();
+        },
+        () => {
+          alert("Message not sent !");
+        }
+      )
+      .finally(() => {
+        setLoading(false);
+      });
+  };
   return (
     <section className="beta-test">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -103,25 +141,28 @@ function Newsletter() {
                 <p className="text-gray-300 text-lg mb-6">
                   Dans un but d'amélioration, nous cherchons 10 personnes* qui
                   souhaiteraient tester HADO gratuitement en échange de vos
-                  retours régulier de son utilisation. Laissez nous votre numéro
-                  de téléphone afin qu'on puisse vous recontacter.
+                  retours régulier de son utilisation. Laissez nous votre email
+                  afin qu'on puisse vous recontacter.
                 </p>
 
                 {/* CTA form */}
-                <form className="w-full lg:w-auto">
+                <form
+                  className="w-full lg:w-auto"
+                  onSubmit={sendEmail}
+                  id="contact-form"
+                >
                   <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md lg:mx-0">
                     <input
-                      type="phone"
+                      type="email"
                       className="form-input w-full appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-gray-500"
-                      placeholder="Numéro de téléphone"
-                      aria-label="Numéro de téléphone"
+                      placeholder="Email"
+                      aria-label="Email"
+                      required="required"
+                      name="email"
                     />
-                    <a
-                      className="btn text-white bg-blue-600 hover:bg-blue-700 shadow"
-                      href="#0"
-                    >
+                    <button className="btn text-white bg-blue-600 hover:bg-blue-700 shadow">
                       Envoyer
-                    </a>
+                    </button>
                   </div>
                   {/* Success message */}
                   {/* <p className="text-sm text-gray-400 mt-3">Thanks for subscribing!</p> */}

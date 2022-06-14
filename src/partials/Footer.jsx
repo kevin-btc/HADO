@@ -61,42 +61,50 @@ function Footer() {
             <h6 className="text-gray-800 font-medium mb-2">Réseau sociaux</h6>
             <ul className="text-sm">
               <li className="mb-2">
-                <Link
-                  to="#"
+                <a
+                  href="https://www.facebook.com/hadoShower"
+                  rel="noopener noreferer"
+                  target="_blank"
                   className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
                 >
                   Facebook
-                </Link>
+                </a>
               </li>
               <li className="mb-2">
-                <Link
-                  to="#"
+                <a
+                  href="https://www.linkedin.com/in/hado-shower-7a1171242/"
+                  rel="noopener noreferer"
+                  target="_blank"
                   className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
                 >
                   Linkedin
-                </Link>
+                </a>
               </li>
               <li className="mb-2">
-                <Link
-                  to="#"
+                <a
+                  href="https://twitter.com/HadoShower"
+                  rel="noopener noreferer"
+                  target="_blank"
                   className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
                 >
                   Twitter
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
 
           {/* 3rd block */}
           <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
-            <h6 className="text-gray-800 font-medium mb-2">Partenaires</h6>
+            <h6 className="text-gray-800 font-medium mb-2">
+              Informations (bientot)
+            </h6>
             <ul className="text-sm">
               <li className="mb-2">
                 <Link
                   to="#"
                   className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
                 >
-                  Documentation
+                  Documentations
                 </Link>
               </li>
               <li className="mb-2">
@@ -104,15 +112,7 @@ function Footer() {
                   to="#"
                   className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
                 >
-                  Tutorials & Guides
-                </Link>
-              </li>
-              <li className="mb-2">
-                <Link
-                  to="#"
-                  className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
-                >
-                  Blog
+                  Guides
                 </Link>
               </li>
               <li className="mb-2">
@@ -128,7 +128,7 @@ function Footer() {
                   to="#"
                   className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
                 >
-                  Partners
+                  Partenaires
                 </Link>
               </li>
             </ul>
@@ -185,7 +185,7 @@ function Footer() {
           <div className="sm:col-span-6 md:col-span-3 lg:col-span-3">
             <h6 className="text-gray-800 font-medium mb-2">Beta Testeur</h6>
             <p className="text-sm text-gray-600 mb-4">
-              Laissez nous votre email ou numéro de téléphone
+              Laissez nous votre email pour devenir testeur gratuitement
             </p>
             <form onSubmit={sendEmail}>
               <div className="flex flex-wrap mb-4">
@@ -236,8 +236,10 @@ function Footer() {
           {/* Social links */}
           <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0">
             <li>
-              <Link
-                to="#"
+              <a
+                href="https://twitter.com/HadoShower"
+                rel="noopener noreferer"
+                target="_blank"
                 className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
                 aria-label="Twitter"
               >
@@ -248,13 +250,15 @@ function Footer() {
                 >
                   <path d="M24 11.5c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1-1.7 0-3.2 1.5-3.2 3.3 0 .3 0 .5.1.7-2.7-.1-5.2-1.4-6.8-3.4-.3.5-.4 1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4 0 1.6 1.1 2.9 2.6 3.2-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H8c1.5.9 3.2 1.5 5 1.5 6 0 9.3-5 9.3-9.3v-.4c.7-.5 1.3-1.1 1.7-1.8z" />
                 </svg>
-              </Link>
+              </a>
             </li>
             <li className="ml-4">
-              <Link
-                to="#"
+              <a
+                rel="noopener noreferer"
+                target="_blank"
                 className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
                 aria-label="linkedin"
+                href="https://www.linkedin.com/in/hado-shower-7a1171242/"
               >
                 <svg
                   className="w-8 h-8 fill-current p-1"
@@ -263,13 +267,15 @@ function Footer() {
                 >
                   <path d="M8.643 4A2.641 2.641 0 0 0 6 6.64C6 8.1 7.183 9.31 8.64 9.31c1.459 0 2.643-1.21 2.643-2.668A2.64 2.64 0 0 0 8.643 4zm12.892 7c-2.219 0-3.488 1.16-4.098 2.314h-.064v-2.003H13V26h4.557v-7.271c0-1.916.144-3.768 2.515-3.768c2.337 0 2.371 2.185 2.371 3.889V26H27v-8.068C27 13.984 26.151 11 21.535 11zm-15.172.31V26h4.56V11.31h-4.56z" />
                 </svg>
-              </Link>
+              </a>
             </li>
             <li className="ml-4">
-              <Link
-                to="https://www.facebook.com/hadoShower"
+              <a
+                href="https://www.facebook.com/hadoShower"
                 className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
                 aria-label="Facebook"
+                rel="noopener noreferer"
+                target="_blank"
               >
                 <svg
                   className="w-8 h-8 fill-current"
@@ -278,7 +284,7 @@ function Footer() {
                 >
                   <path d="M14.023 24L14 17h-3v-3h3v-2c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V14H21l-1 3h-2.72v7h-3.257z" />
                 </svg>
-              </Link>
+              </a>
             </li>
           </ul>
 

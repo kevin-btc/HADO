@@ -76,7 +76,9 @@ function Features() {
                       detecte le début d'une douche et enclenche un timer du
                       temps que vous aurez défini au premier lancement de l'app.
                       Une fois ce temps écoulé Hado gére tout seul la fermeture
-                      de la vanne.
+                      de la vanne. Vous pouvez bien évidemment prendre votre
+                      temps pour vous savonner en eteignant l'eau, HADO le prend
+                      en compte.
                     </div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
@@ -118,8 +120,10 @@ function Features() {
                       vous sera demandé. Elle correspond au temps de fermeture
                       de la vanne du système HADO. Si la personne qui se douche
                       atteint la limite que vous avez fixé, Hado s'enclenche et
-                      se ferme progessivement et s'ouvrira de nouveau après le
-                      temps d'arrêt défini.
+                      se ferme progessivement sans se fermer complètement pour
+                      ne pas etre sous l'eau froide 🥶 mais avec moins de
+                      confort pour nous faire sortir et s'ouvrira de nouveau
+                      après le temps d'arrêt défini.
                     </div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">

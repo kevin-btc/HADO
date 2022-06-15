@@ -293,7 +293,7 @@ function Footer() {
             Made by{" "}
             <a
               className="text-blue-600 hover:underline"
-              href="https://hado.fr/"
+              href="https://hado-shower.fr/"
             >
               HADO
             </a>

@@ -1,6 +1,6 @@
 ## Live demo
 
-Check the live demo here 👉️ [https://hado.fr](https://hado.fr)
+Check the live demo here 👉️ [https://hado-shower.fr](https://hado-shower.fr)
 
 ## Usage
 

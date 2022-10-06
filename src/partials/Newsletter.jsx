@@ -136,13 +136,14 @@ function Newsletter() {
               {/* CTA content */}
               <div className="text-center lg:text-left lg:max-w-xl">
                 <h3 className="h3 text-white mb-2">
-                  Envie de tester HADO chez vous ?
+                  Envie d'avoir HADO chez vous ?
                 </h3>
                 <p className="text-gray-300 text-lg mb-6">
-                  Dans un but d'amélioration, nous cherchons 10 personnes* qui
-                  souhaiteraient tester HADO gratuitement en échange de vos
-                  retours régulier de son utilisation. Laissez nous votre email
-                  afin qu'on puisse vous recontacter.
+                  Pour cela, laissez nous votre email pour vous inscrire sur la
+                  liste de pré-commande. Rien n'est à payer à l'avance et il n'y
+                  a aucun engagement de votre part. Le jour de la pré-vente vous
+                  serez simplement averti du début de la commercialisation* du
+                  système HADO en avant première.
                 </p>
 
                 {/* CTA form */}
@@ -167,7 +168,7 @@ function Newsletter() {
                   {/* Success message */}
                   {/* <p className="text-sm text-gray-400 mt-3">Thanks for subscribing!</p> */}
                   <p className="text-xs text-gray-400 mt-1">
-                    * Place limité exclusivement à 10 personnes
+                    * 50 produits seront en pré-vente
                   </p>
                 </form>
               </div>

@@ -57,7 +57,7 @@ function Header() {
                   onClick={() => scrollToSection("beta-test")}
                   className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3"
                 >
-                  <span>Tester gratuitement</span>
+                  <span>Pré-commande</span>
                   <svg
                     className="w-3 h-3 fill-current text-gray-400 flex-shrink-0 ml-2 -mr-1"
                     viewBox="0 0 12 12"

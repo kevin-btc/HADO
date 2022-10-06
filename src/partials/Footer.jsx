@@ -183,7 +183,7 @@ function Footer() {
 
           {/* 5th block */}
           <div className="sm:col-span-6 md:col-span-3 lg:col-span-3">
-            <h6 className="text-gray-800 font-medium mb-2">Beta Testeur</h6>
+            <h6 className="text-gray-800 font-medium mb-2">Pré-commande</h6>
             <p className="text-sm text-gray-600 mb-4">
               Laissez nous votre email pour etre sur la liste de pré-commande
             </p>

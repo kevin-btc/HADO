@@ -185,7 +185,7 @@ function Footer() {
           <div className="sm:col-span-6 md:col-span-3 lg:col-span-3">
             <h6 className="text-gray-800 font-medium mb-2">Beta Testeur</h6>
             <p className="text-sm text-gray-600 mb-4">
-              Laissez nous votre email pour devenir testeur gratuitement
+              Laissez nous votre email pour etre sur la liste de pré-commande
             </p>
             <form onSubmit={sendEmail}>
               <div className="flex flex-wrap mb-4">

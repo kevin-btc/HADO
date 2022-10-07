@@ -233,6 +233,9 @@ const Simulator = () => {
                           }));
                         }}
                       />
+                      <h6 className="h6 text-slate-300 mb-2 text-xs italic font-light">
+                        *4.3€ est la moyenne française.
+                      </h6>
                     </div>
                     <div className="mb-4">
                       <label

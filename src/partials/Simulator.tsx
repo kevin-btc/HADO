@@ -53,8 +53,9 @@ const Simulator = () => {
   useEffect(() => {
     setData((prev) => ({
       ...prev,
-      actualShowerTimePerDayForAll: persons.reduce(
-        (prev, current) => prev + current
+      actualShowerTimePerDayForAll: persons?.reduce?.(
+        (prev, current) => prev + current,
+        0
       ),
     }));
   }, [persons]);
@@ -135,7 +136,8 @@ const Simulator = () => {
                         onChange={(event) => {
                           event.preventDefault();
                           const value = Number(event.target.value);
-                          if (value > 0 && value < 10) {
+
+                          if (value >= 0 && value < 10) {
                             setData((prev) => ({
                               ...prev,
                               numberOfPersons: Number(event.target.value),
@@ -162,7 +164,7 @@ const Simulator = () => {
                               );
                             }
                           } else {
-                            setError("Doit être > 0 & < 10");
+                            throw new Error("Doit être entre 1 et 10");
                           }
                         }}
                       />

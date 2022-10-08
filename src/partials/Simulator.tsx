@@ -244,7 +244,8 @@ const Simulator = () => {
                         className="block text-gray-400 text-sm font-bold mb-2"
                         htmlFor="name"
                       >
-                        Economie estimé : {getAmountOfSaving(data).toFixed(2)} €
+                        Économies estimées :{getAmountOfSaving(data).toFixed(2)}
+                        €
                       </label>
                     </div>
                     <h6 className="h6 text-slate-300 mb-2 text-xs italic font-light">

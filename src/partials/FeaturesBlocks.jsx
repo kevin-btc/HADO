@@ -104,8 +104,8 @@ function FeaturesBlocks() {
                 Économie d'énergie
               </h4>
               <p className="text-gray-600 text-center">
-                Reduisé votre facture également pour les systèmes de chauffe-eau
-                instantannés (électricité, gaz, fioul..)
+                Reduisez votre facture également pour les systèmes de
+                chauffe-eau instantannés (électricité, gaz, fioul..)
               </p>
             </div>
 

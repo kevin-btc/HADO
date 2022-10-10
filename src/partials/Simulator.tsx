@@ -463,8 +463,13 @@ const Simulator = () => {
                         </div>
                       </div>
                     )}
+
                     <h6 className="h6 text-slate-300 mb-2 text-xs italic font-light">
                       * Pour une moyenne d'une douche par jour par personne.
+                    </h6>
+                    <h6 className="h6 text-slate-300 mb-2 text-xs italic font-light">
+                      * Ce simulateur ne prend pas en compte les économies
+                      électriques qui seront également faites.
                     </h6>
                   </div>
                 </form>

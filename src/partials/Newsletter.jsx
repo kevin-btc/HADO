@@ -3,11 +3,6 @@ import React, { useState } from "react";
 import emailjs from "emailjs-com";
 
 function Newsletter() {
-  console.log(
-    import.meta.env,
-    import.meta.env.VITE_EMAIL_TEMPLATE,
-    import.meta.env.VITE_EMAIL_USER
-  );
   const [loading, setLoading] = useState(false);
 
   const clearForm = () => {

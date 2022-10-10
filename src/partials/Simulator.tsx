@@ -169,7 +169,7 @@ const Simulator = () => {
                 <h3 className="h3 text-white mb-2">Simulateur d'économie</h3>
 
                 {/* CTA form */}
-                <form className="w-full lg:w-auto" id="contact-form">
+                <form className="w-full lg:w-auto">
                   <div className="flex flex-col justify-center max-w-xs mx-auto sm:max-w-md lg:mx-0">
                     <div className="mb-4">
                       <label

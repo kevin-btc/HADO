@@ -385,7 +385,7 @@ const Simulator = () => {
                         className="block text-gray-400 text-sm font-bold mb-2"
                         htmlFor="name"
                       >
-                        Combien de temps aimeriez vous qu'une douche dure ?
+                        Combien de minutes aimeriez vous qu'une douche dure ?
                       </label>
                       <input
                         className="shadow appearance-none border rounded w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -436,19 +436,19 @@ const Simulator = () => {
 
                     {selectedLocation && data.priceWaterPerCubicMeter && (
                       <div className="mb-4">
-                        <label className="block text-green-400 text-sm font-bold mb-2">
+                        <label className="block text-blue-400 text-sm uppercase font-bold mb-2">
                           {data.isWaterPriceFetched
                             ? `Prix de l'eau au m3 pour ${selectedLocation} : 
                           ${data.priceWaterPerCubicMeter} €`
                             : `Prix de l'eau au m3 : ${data.priceWaterPerCubicMeter} €`}
                         </label>
                         <label
-                          className="block text-gray-400 text-sm font-bold mb-2 uppercase"
+                          className="block text-gray-400 text-sm font-bold mb-2 uppercase mt-4"
                           htmlFor="name"
                         >
                           Économies estimées :
                         </label>
-                        <div className="block text-gray-400 text-sm font-bold mb-2">
+                        <div className="block text-green-400 text-sm font-bold mb-2">
                           <div>
                             💰 {getAmountOfSaving(data).toFixed(2) || 0} € / an
                           </div>

@@ -264,8 +264,7 @@ const Simulator = () => {
                         className="block text-gray-400 text-sm font-bold mb-2"
                         htmlFor="name"
                       >
-                        Entrez votre ville pour reconnaitre le prix du m3 d'eau
-                        ?
+                        Entrez votre ville pour connaitre le prix du m3 d'eau ?
                       </label>
                       <div className="relative">
                         <input

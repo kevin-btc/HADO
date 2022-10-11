@@ -120,10 +120,9 @@ function Features() {
                       vous sera demandé. Elle correspond au temps de fermeture
                       de la vanne du système HADO. Si la personne qui se douche
                       atteint la limite que vous avez fixé, Hado s'enclenche et
-                      se ferme progessivement sans se fermer complètement pour
-                      ne pas etre sous l'eau froide 🥶 mais avec moins de
-                      confort pour nous faire sortir et s'ouvrira de nouveau
-                      après le temps d'arrêt défini.
+                      se ferme ce qui incite la personne à sortir de la douche
+                      pour ne pas etre sous l'eau froide 🥶.La vanne s'ouvrira
+                      de nouveau automatiquement après le temps d'arrêt défini.
                     </div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">

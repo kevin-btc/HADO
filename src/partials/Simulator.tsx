@@ -235,7 +235,7 @@ const Simulator = () => {
                         htmlFor="name"
                       >
                         Combien de minutes chaque personne prend sous la douche
-                        ?
+                        environ ?
                       </label>
                       <div
                         className={`grid grid-rows-${

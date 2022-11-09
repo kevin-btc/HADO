@@ -183,9 +183,9 @@ function FeaturesBlocks() {
                         />
                         <path
                           stroke="white"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
                           d="M11 21c-5.6 0-7-4.667-7-7c5.6 0 7 4.667 7 7zm0 0h1m0 0v-8m0 8h1m-1-8c-4 0-5-3.333-5-5V4l2.5 2L12 3l2.5 3L17 4v4c0 1.667-1 5-5 5zm1 8c5.6 0 7-4.667 7-7c-5.6 0-7 4.667-7 7z"
                         />
                       </g>
@@ -275,9 +275,9 @@ function FeaturesBlocks() {
                         <g
                           fill="none"
                           stroke="#fff"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="4"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="4"
                         >
                           <path
                             fill="#fff"

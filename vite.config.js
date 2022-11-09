@@ -26,4 +26,7 @@ export default defineConfig({
       transformMixedEsModules: true,
     },
   },
+  externals: {
+    $crisp: "$crisp",
+  },
 });

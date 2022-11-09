@@ -245,6 +245,7 @@ const Simulator = () => {
                         {persons.map((person, id) => {
                           return (
                             <input
+                              key={id}
                               className="shadow appearance-none border rounded w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                               id="name"
                               type="number"
@@ -286,9 +287,9 @@ const Simulator = () => {
                           stroke="currentColor"
                         >
                           <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
                             d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
                           />
                         </svg>
@@ -298,10 +299,10 @@ const Simulator = () => {
                             style={{ maxHeight: "300px", overflow: "scroll" }}
                           >
                             {isToggle &&
-                              locations?.map((location: string) => {
+                              locations?.map((location: string, key) => {
                                 return (
                                   <li
-                                    key={location}
+                                    key={key}
                                     id={location}
                                     className="pl-8 pr-2 py-1 border-b-2 border-gray-100 relative cursor-pointer hover:bg-yellow-50 hover:text-gray-900"
                                     onClick={() => {
@@ -317,15 +318,15 @@ const Simulator = () => {
                                       stroke="currentColor"
                                     >
                                       <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="2"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        strokeWidth="2"
                                         d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
                                       />
                                       <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="2"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        strokeWidth="2"
                                         d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                                       />
                                     </svg>
